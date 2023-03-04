@@ -24,6 +24,8 @@ const Home: NextPage = () => {
         'http://54.233.228.109:3333/xpto/products'
       )
 
+      console.log({ data })
+
       setProducts(JSON.parse(`${data}`)?.products)
     } catch (error: any) {
       console.log(error.message)
