@@ -1,7 +1,6 @@
 import ProductsList from '@/components/ProductsList'
 import { api } from '@/services/api'
 import { Flex, Spinner } from '@chakra-ui/react'
-import axios from 'axios'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
@@ -20,9 +19,7 @@ const Home: NextPage = () => {
 
   async function handleData() {
     try {
-      const { data } = await api.get<{ products: Product[] }>(
-        'http://54.233.228.109:3333/xpto/products'
-      )
+      const { data } = await api.get<{ products: Product[] }>('/')
 
       setProducts(JSON.parse(`${data}`)?.products)
     } catch (error: any) {
