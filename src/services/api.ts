@@ -1,7 +1,7 @@
 import { Axios } from 'axios'
 
 export const api = new Axios({
-  baseURL: 'http://localhost:3333/xpto/products/',
+  baseURL: process.env.NEXT_PUBLIC_AXIOS_URL!,
   headers: {
     'x-high-auth': 'its_our_little_secret'
   },
