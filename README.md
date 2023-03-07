@@ -3,7 +3,7 @@
 High company is a drop-based e-commerce. This repository consists of the client-side ecosystem.
 
 
-Visit the High Company [High Company](https://high-company-frontend-240d32szq-pabloferrari013.vercel.app/)
+Visit the [High Company](https://high-company-frontend-240d32szq-pabloferrari013.vercel.app/)
 
 ## Starting project
 
